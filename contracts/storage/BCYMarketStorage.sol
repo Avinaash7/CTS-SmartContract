@@ -4,7 +4,7 @@ pragma solidity ^0.8.9;
 import "../types/DataTypes.sol";
 
 
-contract CXEMarketStorage {
+contract BCYMarketStorage {
 
     /// @dev Owner is the contract address that created the smart contract
     address payable owner;

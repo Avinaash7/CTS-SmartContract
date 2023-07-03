@@ -12,9 +12,8 @@ import "./interfaces/IBCYMarket.sol";
 import "./types/DataTypes.sol";
 import "./storage/BCYMarketStorage.sol";
 
-abstract contract BCYMarket is IBCYMarket, 
-    ERC721URIStorage, 
-    CXEMarketStorage
+contract BCYMarket is BCYMarketStorage,IBCYMarket, 
+    ERC721URIStorage
     {
 
     using Counters for Counters.Counter;
@@ -31,9 +30,9 @@ abstract contract BCYMarket is IBCYMarket,
      * TODO At the moment use normal Proxy to update, to let in the future integrate Diamond Proxy
      * NOTE Accepts only BCY to mint NFTs writing the address of the token in deployment
      */
-    constructor(address _bcyAddress) ERC721("BlockConvey", "BCY") {
+    constructor() ERC721("BlockConvey", "BCY") {
         owner = payable(msg.sender);
-        bcyAddress = IERC20(_bcyAddress);
+        bcyAddress = IERC20(0x3608631C72fa89C27DE0F703a61907Bf945133B1);
     }
 
     /**

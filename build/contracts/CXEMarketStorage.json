@@ -24,26 +24,26 @@
     {
       "ast": {
         "nodeType": "YulBlock",
-        "src": "0:439:34",
+        "src": "0:439:36",
         "statements": [
           {
             "body": {
               "nodeType": "YulBlock",
-              "src": "52:32:34",
+              "src": "52:32:36",
               "statements": [
                 {
                   "nodeType": "YulAssignment",
-                  "src": "62:16:34",
+                  "src": "62:16:36",
                   "value": {
                     "name": "value",
                     "nodeType": "YulIdentifier",
-                    "src": "73:5:34"
+                    "src": "73:5:36"
                   },
                   "variableNames": [
                     {
                       "name": "cleaned",
                       "nodeType": "YulIdentifier",
-                      "src": "62:7:34"
+                      "src": "62:7:36"
                     }
                   ]
                 }
@@ -55,7 +55,7 @@
               {
                 "name": "value",
                 "nodeType": "YulTypedName",
-                "src": "34:5:34",
+                "src": "34:5:36",
                 "type": ""
               }
             ],
@@ -63,16 +63,16 @@
               {
                 "name": "cleaned",
                 "nodeType": "YulTypedName",
-                "src": "44:7:34",
+                "src": "44:7:36",
                 "type": ""
               }
             ],
-            "src": "7:77:34"
+            "src": "7:77:36"
           },
           {
             "body": {
               "nodeType": "YulBlock",
-              "src": "155:53:34",
+              "src": "155:53:36",
               "statements": [
                 {
                   "expression": {
@@ -80,35 +80,35 @@
                       {
                         "name": "pos",
                         "nodeType": "YulIdentifier",
-                        "src": "172:3:34"
+                        "src": "172:3:36"
                       },
                       {
                         "arguments": [
                           {
                             "name": "value",
                             "nodeType": "YulIdentifier",
-                            "src": "195:5:34"
+                            "src": "195:5:36"
                           }
                         ],
                         "functionName": {
                           "name": "cleanup_t_uint256",
                           "nodeType": "YulIdentifier",
-                          "src": "177:17:34"
+                          "src": "177:17:36"
                         },
                         "nodeType": "YulFunctionCall",
-                        "src": "177:24:34"
+                        "src": "177:24:36"
                       }
                     ],
                     "functionName": {
                       "name": "mstore",
                       "nodeType": "YulIdentifier",
-                      "src": "165:6:34"
+                      "src": "165:6:36"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "165:37:34"
+                    "src": "165:37:36"
                   },
                   "nodeType": "YulExpressionStatement",
-                  "src": "165:37:34"
+                  "src": "165:37:36"
                 }
               ]
             },
@@ -118,37 +118,37 @@
               {
                 "name": "value",
                 "nodeType": "YulTypedName",
-                "src": "143:5:34",
+                "src": "143:5:36",
                 "type": ""
               },
               {
                 "name": "pos",
                 "nodeType": "YulTypedName",
-                "src": "150:3:34",
+                "src": "150:3:36",
                 "type": ""
               }
             ],
-            "src": "90:118:34"
+            "src": "90:118:36"
           },
           {
             "body": {
               "nodeType": "YulBlock",
-              "src": "312:124:34",
+              "src": "312:124:36",
               "statements": [
                 {
                   "nodeType": "YulAssignment",
-                  "src": "322:26:34",
+                  "src": "322:26:36",
                   "value": {
                     "arguments": [
                       {
                         "name": "headStart",
                         "nodeType": "YulIdentifier",
-                        "src": "334:9:34"
+                        "src": "334:9:36"
                       },
                       {
                         "kind": "number",
                         "nodeType": "YulLiteral",
-                        "src": "345:2:34",
+                        "src": "345:2:36",
                         "type": "",
                         "value": "32"
                       }
@@ -156,16 +156,16 @@
                     "functionName": {
                       "name": "add",
                       "nodeType": "YulIdentifier",
-                      "src": "330:3:34"
+                      "src": "330:3:36"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "330:18:34"
+                    "src": "330:18:36"
                   },
                   "variableNames": [
                     {
                       "name": "tail",
                       "nodeType": "YulIdentifier",
-                      "src": "322:4:34"
+                      "src": "322:4:36"
                     }
                   ]
                 },
@@ -175,19 +175,19 @@
                       {
                         "name": "value0",
                         "nodeType": "YulIdentifier",
-                        "src": "402:6:34"
+                        "src": "402:6:36"
                       },
                       {
                         "arguments": [
                           {
                             "name": "headStart",
                             "nodeType": "YulIdentifier",
-                            "src": "415:9:34"
+                            "src": "415:9:36"
                           },
                           {
                             "kind": "number",
                             "nodeType": "YulLiteral",
-                            "src": "426:1:34",
+                            "src": "426:1:36",
                             "type": "",
                             "value": "0"
                           }
@@ -195,22 +195,22 @@
                         "functionName": {
                           "name": "add",
                           "nodeType": "YulIdentifier",
-                          "src": "411:3:34"
+                          "src": "411:3:36"
                         },
                         "nodeType": "YulFunctionCall",
-                        "src": "411:17:34"
+                        "src": "411:17:36"
                       }
                     ],
                     "functionName": {
                       "name": "abi_encode_t_uint256_to_t_uint256_fromStack",
                       "nodeType": "YulIdentifier",
-                      "src": "358:43:34"
+                      "src": "358:43:36"
                     },
                     "nodeType": "YulFunctionCall",
-                    "src": "358:71:34"
+                    "src": "358:71:36"
                   },
                   "nodeType": "YulExpressionStatement",
-                  "src": "358:71:34"
+                  "src": "358:71:36"
                 }
               ]
             },
@@ -220,13 +220,13 @@
               {
                 "name": "headStart",
                 "nodeType": "YulTypedName",
-                "src": "284:9:34",
+                "src": "284:9:36",
                 "type": ""
               },
               {
                 "name": "value0",
                 "nodeType": "YulTypedName",
-                "src": "296:6:34",
+                "src": "296:6:36",
                 "type": ""
               }
             ],
@@ -234,40 +234,40 @@
               {
                 "name": "tail",
                 "nodeType": "YulTypedName",
-                "src": "307:4:34",
+                "src": "307:4:36",
                 "type": ""
               }
             ],
-            "src": "214:222:34"
+            "src": "214:222:36"
           }
         ]
       },
       "contents": "{\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n}\n",
-      "id": 34,
+      "id": 36,
       "language": "Yul",
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "98:495:22:-:0;;;273:14;251:36;;390:11;370:31;;98:495;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "98:495:22:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;251:36;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;7:77:34:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o",
+  "sourceMap": "98:495:24:-:0;;;273:14;251:36;;390:11;370:31;;98:495;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "98:495:24:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;251:36;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;7:77:36:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\nimport \"../types/DataTypes.sol\";\r\n\r\n\r\ncontract CXEMarketStorage {\r\n\r\n    /// @dev Owner is the contract address that created the smart contract\r\n    address payable owner;\r\n    /// @dev\r\n    uint256 public rate = 100 * 10 ** 18;\r\n    /// @dev The gee charged by the ecommerce to be allowed to list an NFT\r\n    uint256 listPrice = 0.001 ether;\r\n    /// @dev This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId\r\n    mapping(uint256 => DataTypes.MarketItem) internal idToListedToken;\r\n    \r\n}",
   "sourcePath": "D:\\BlockConvey\\Carbon to Stone - SmartContract\\contracts\\storage\\BCYMarketStorage.sol",
   "ast": {
     "absolutePath": "project:/contracts/storage/BCYMarketStorage.sol",
     "exportedSymbols": {
       "CXEMarketStorage": [
-        3958
+        4182
       ],
       "DataTypes": [
-        3991
+        4215
       ]
     },
-    "id": 3959,
+    "id": 4183,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3935,
+        "id": 4159,
         "literals": [
           "solidity",
           "^",
@@ -275,17 +275,17 @@
           ".9"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:22"
+        "src": "33:23:24"
       },
       {
         "absolutePath": "project:/contracts/types/DataTypes.sol",
         "file": "../types/DataTypes.sol",
-        "id": 3936,
+        "id": 4160,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 3959,
-        "sourceUnit": 3992,
-        "src": "60:32:22",
+        "scope": 4183,
+        "sourceUnit": 4216,
+        "src": "60:32:24",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -296,29 +296,29 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 3958,
+        "id": 4182,
         "linearizedBaseContracts": [
-          3958
+          4182
         ],
         "name": "CXEMarketStorage",
-        "nameLocation": "107:16:22",
+        "nameLocation": "107:16:24",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
             "documentation": {
-              "id": 3937,
+              "id": 4161,
               "nodeType": "StructuredDocumentation",
-              "src": "133:70:22",
+              "src": "133:70:24",
               "text": "@dev Owner is the contract address that created the smart contract"
             },
-            "id": 3939,
+            "id": 4163,
             "mutability": "mutable",
             "name": "owner",
-            "nameLocation": "225:5:22",
+            "nameLocation": "225:5:24",
             "nodeType": "VariableDeclaration",
-            "scope": 3958,
-            "src": "209:21:22",
+            "scope": 4182,
+            "src": "209:21:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -326,10 +326,10 @@
               "typeString": "address payable"
             },
             "typeName": {
-              "id": 3938,
+              "id": 4162,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "209:15:22",
+              "src": "209:15:24",
               "stateMutability": "payable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address_payable",
@@ -341,19 +341,19 @@
           {
             "constant": false,
             "documentation": {
-              "id": 3940,
+              "id": 4164,
               "nodeType": "StructuredDocumentation",
-              "src": "237:8:22",
+              "src": "237:8:24",
               "text": "@dev"
             },
             "functionSelector": "2c4e722e",
-            "id": 3947,
+            "id": 4171,
             "mutability": "mutable",
             "name": "rate",
-            "nameLocation": "266:4:22",
+            "nameLocation": "266:4:24",
             "nodeType": "VariableDeclaration",
-            "scope": 3958,
-            "src": "251:36:22",
+            "scope": 4182,
+            "src": "251:36:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -361,10 +361,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3941,
+              "id": 4165,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "251:7:22",
+              "src": "251:7:24",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -375,21 +375,21 @@
                 "typeIdentifier": "t_rational_100000000000000000000_by_1",
                 "typeString": "int_const 100000000000000000000"
               },
-              "id": 3946,
+              "id": 4170,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "313030",
-                "id": 3942,
+                "id": 4166,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "273:3:22",
+                "src": "273:3:24",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_100_by_1",
                   "typeString": "int_const 100"
@@ -403,21 +403,21 @@
                   "typeIdentifier": "t_rational_1000000000000000000_by_1",
                   "typeString": "int_const 1000000000000000000"
                 },
-                "id": 3945,
+                "id": 4169,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "lValueRequested": false,
                 "leftExpression": {
                   "hexValue": "3130",
-                  "id": 3943,
+                  "id": 4167,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
                   "kind": "number",
                   "lValueRequested": false,
                   "nodeType": "Literal",
-                  "src": "279:2:22",
+                  "src": "279:2:24",
                   "typeDescriptions": {
                     "typeIdentifier": "t_rational_10_by_1",
                     "typeString": "int_const 10"
@@ -428,27 +428,27 @@
                 "operator": "**",
                 "rightExpression": {
                   "hexValue": "3138",
-                  "id": 3944,
+                  "id": 4168,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
                   "kind": "number",
                   "lValueRequested": false,
                   "nodeType": "Literal",
-                  "src": "285:2:22",
+                  "src": "285:2:24",
                   "typeDescriptions": {
                     "typeIdentifier": "t_rational_18_by_1",
                     "typeString": "int_const 18"
                   },
                   "value": "18"
                 },
-                "src": "279:8:22",
+                "src": "279:8:24",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_1000000000000000000_by_1",
                   "typeString": "int_const 1000000000000000000"
                 }
               },
-              "src": "273:14:22",
+              "src": "273:14:24",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_100000000000000000000_by_1",
                 "typeString": "int_const 100000000000000000000"
@@ -459,18 +459,18 @@
           {
             "constant": false,
             "documentation": {
-              "id": 3948,
+              "id": 4172,
               "nodeType": "StructuredDocumentation",
-              "src": "294:70:22",
+              "src": "294:70:24",
               "text": "@dev The gee charged by the ecommerce to be allowed to list an NFT"
             },
-            "id": 3951,
+            "id": 4175,
             "mutability": "mutable",
             "name": "listPrice",
-            "nameLocation": "378:9:22",
+            "nameLocation": "378:9:24",
             "nodeType": "VariableDeclaration",
-            "scope": 3958,
-            "src": "370:31:22",
+            "scope": 4182,
+            "src": "370:31:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -478,10 +478,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3949,
+              "id": 4173,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "370:7:22",
+              "src": "370:7:24",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -489,14 +489,14 @@
             },
             "value": {
               "hexValue": "302e303031",
-              "id": 3950,
+              "id": 4174,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "390:11:22",
+              "src": "390:11:24",
               "subdenomination": "ether",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_1000000000000000_by_1",
@@ -509,56 +509,56 @@
           {
             "constant": false,
             "documentation": {
-              "id": 3952,
+              "id": 4176,
               "nodeType": "StructuredDocumentation",
-              "src": "408:104:22",
+              "src": "408:104:24",
               "text": "@dev This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId"
             },
-            "id": 3957,
+            "id": 4181,
             "mutability": "mutable",
             "name": "idToListedToken",
-            "nameLocation": "568:15:22",
+            "nameLocation": "568:15:24",
             "nodeType": "VariableDeclaration",
-            "scope": 3958,
-            "src": "518:65:22",
+            "scope": 4182,
+            "src": "518:65:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$3990_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$4214_storage_$",
               "typeString": "mapping(uint256 => struct DataTypes.MarketItem)"
             },
             "typeName": {
-              "id": 3956,
+              "id": 4180,
               "keyType": {
-                "id": 3953,
+                "id": 4177,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
-                "src": "526:7:22",
+                "src": "526:7:24",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "518:40:22",
+              "src": "518:40:24",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$3990_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$4214_storage_$",
                 "typeString": "mapping(uint256 => struct DataTypes.MarketItem)"
               },
               "valueType": {
-                "id": 3955,
+                "id": 4179,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 3954,
+                  "id": 4178,
                   "name": "DataTypes.MarketItem",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3990,
-                  "src": "537:20:22"
+                  "referencedDeclaration": 4214,
+                  "src": "537:20:24"
                 },
-                "referencedDeclaration": 3990,
-                "src": "537:20:22",
+                "referencedDeclaration": 4214,
+                "src": "537:20:24",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_MarketItem_$3990_storage_ptr",
+                  "typeIdentifier": "t_struct$_MarketItem_$4214_storage_ptr",
                   "typeString": "struct DataTypes.MarketItem"
                 }
               }
@@ -566,12 +566,12 @@
             "visibility": "internal"
           }
         ],
-        "scope": 3959,
-        "src": "98:495:22",
+        "scope": 4183,
+        "src": "98:495:24",
         "usedErrors": []
       }
     ],
-    "src": "33:560:22"
+    "src": "33:560:24"
   },
   "compiler": {
     "name": "solc",
@@ -579,7 +579,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2023-07-03T06:50:28.193Z",
+  "updatedAt": "2023-07-03T10:40:13.791Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

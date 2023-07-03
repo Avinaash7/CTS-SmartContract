@@ -1337,7 +1337,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2023-07-02T20:16:04.540Z",
+  "updatedAt": "2023-07-03T10:40:13.728Z",
   "devdoc": {
     "details": "Standard signed math utilities missing in the Solidity language.",
     "kind": "dev",
