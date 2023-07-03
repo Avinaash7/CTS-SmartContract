@@ -1,0 +1,255 @@
+{
+  "contractName": "NFTStorage",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"stateVariables\":{\"_operatorApprovals\":{\"details\":\"Mapping from owner to operator approvals\"},\"_tokenApprovals\":{\"details\":\"Mapping from token ID to approved address\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/storage/NFTStorage.sol\":\"NFTStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/storage/NFTStorage.sol\":{\"keccak256\":\"0x721d205a9dfcfb6a839fcf6234e9761c04e90f74cc447c73e246025a50105846\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c7108d22373ebbff77a81a509924b4edcb6fc5d722430b5b0e37bf72afbb67ee\",\"dweb:/ipfs/QmQwu9qq3mEeK8EriLZeTdjKXLgEEBsAz8ieyVH7QLnu8R\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122087b9cbc641dcc9b5a533a602fd9be71f0182d4e9ecb8c1d7d9e9765c56275b7b64736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122087b9cbc641dcc9b5a533a602fd9be71f0182d4e9ecb8c1d7d9e9765c56275b7b64736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "60:334:23:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "60:334:23:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\ncontract NFTStorage {\r\n\r\n    mapping(uint256 => address) internal _owners;\r\n  \r\n\r\n    /// @dev Mapping from owner to operator approvals\r\n    mapping(address => mapping(address => bool)) internal _operatorApprovals;\r\n\r\n    /// @dev Mapping from token ID to approved address\r\n    mapping(uint256 => address) internal _tokenApprovals;\r\n}",
+  "sourcePath": "D:\\BlockConvey\\Carbon to Stone - SmartContract\\contracts\\storage\\NFTStorage.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/storage/NFTStorage.sol",
+    "exportedSymbols": {
+      "NFTStorage": [
+        3977
+      ]
+    },
+    "id": 3978,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3960,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:23"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "NFTStorage",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3977,
+        "linearizedBaseContracts": [
+          3977
+        ],
+        "name": "NFTStorage",
+        "nameLocation": "69:10:23",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3964,
+            "mutability": "mutable",
+            "name": "_owners",
+            "nameLocation": "126:7:23",
+            "nodeType": "VariableDeclaration",
+            "scope": 3977,
+            "src": "89:44:23",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
+              "typeString": "mapping(uint256 => address)"
+            },
+            "typeName": {
+              "id": 3963,
+              "keyType": {
+                "id": 3961,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "97:7:23",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "89:27:23",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
+                "typeString": "mapping(uint256 => address)"
+              },
+              "valueType": {
+                "id": 3962,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "108:7:23",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 3965,
+              "nodeType": "StructuredDocumentation",
+              "src": "146:49:23",
+              "text": "@dev Mapping from owner to operator approvals"
+            },
+            "id": 3971,
+            "mutability": "mutable",
+            "name": "_operatorApprovals",
+            "nameLocation": "255:18:23",
+            "nodeType": "VariableDeclaration",
+            "scope": 3977,
+            "src": "201:72:23",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_bool_$_$",
+              "typeString": "mapping(address => mapping(address => bool))"
+            },
+            "typeName": {
+              "id": 3970,
+              "keyType": {
+                "id": 3966,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "209:7:23",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "201:44:23",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_bool_$_$",
+                "typeString": "mapping(address => mapping(address => bool))"
+              },
+              "valueType": {
+                "id": 3969,
+                "keyType": {
+                  "id": 3967,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "228:7:23",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "220:24:23",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                  "typeString": "mapping(address => bool)"
+                },
+                "valueType": {
+                  "id": 3968,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "239:4:23",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                }
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 3972,
+              "nodeType": "StructuredDocumentation",
+              "src": "282:50:23",
+              "text": "@dev Mapping from token ID to approved address"
+            },
+            "id": 3976,
+            "mutability": "mutable",
+            "name": "_tokenApprovals",
+            "nameLocation": "375:15:23",
+            "nodeType": "VariableDeclaration",
+            "scope": 3977,
+            "src": "338:52:23",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
+              "typeString": "mapping(uint256 => address)"
+            },
+            "typeName": {
+              "id": 3975,
+              "keyType": {
+                "id": 3973,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "346:7:23",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "338:27:23",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
+                "typeString": "mapping(uint256 => address)"
+              },
+              "valueType": {
+                "id": 3974,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "357:7:23",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3978,
+        "src": "60:334:23",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:361:23"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2023-07-03T06:50:28.197Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "stateVariables": {
+      "_operatorApprovals": {
+        "details": "Mapping from owner to operator approvals"
+      },
+      "_tokenApprovals": {
+        "details": "Mapping from token ID to approved address"
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

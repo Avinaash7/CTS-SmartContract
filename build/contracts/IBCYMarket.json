@@ -1,0 +1,1247 @@
+{
+  "contractName": "IBCYMarket",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "seller",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "currentlyListed",
+          "type": "bool"
+        }
+      ],
+      "name": "ItemListedSuccess",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_listPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "updatePrice",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "tokenURI",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "createMarketItem",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "removeMarketItem",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "sale",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getListPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLatestIdToListedItem",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address payable",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "address payable",
+              "name": "seller",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "currentlyListed",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct DataTypes.MarketItem",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getListedItemForId",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address payable",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "address payable",
+              "name": "seller",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "currentlyListed",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct DataTypes.MarketItem",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCurrentToken",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllNFTs",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address payable",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "address payable",
+              "name": "seller",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "currentlyListed",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct DataTypes.MarketItem[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"seller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"currentlyListed\",\"type\":\"bool\"}],\"name\":\"ItemListedSuccess\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"tokenURI\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"name\":\"createMarketItem\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllNFTs\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"currentlyListed\",\"type\":\"bool\"}],\"internalType\":\"struct DataTypes.MarketItem[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getCurrentToken\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLatestIdToListedItem\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"currentlyListed\",\"type\":\"bool\"}],\"internalType\":\"struct DataTypes.MarketItem\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getListPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getListedItemForId\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"currentlyListed\",\"type\":\"bool\"}],\"internalType\":\"struct DataTypes.MarketItem\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"removeMarketItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"sale\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_listPrice\",\"type\":\"uint256\"}],\"name\":\"updatePrice\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"events\":{\"ItemListedSuccess(uint256,address,address,uint256,bool)\":{\"details\":\"When a item is created, should show the item into the market\"}},\"kind\":\"dev\",\"methods\":{\"createMarketItem(string,uint256)\":{\"details\":\"Using 3 functions, the first to from OZ and the last one written below\",\"params\":{\"price\":\"is the price that the user will create their item\",\"tokenURI\":\"is the URL that saves the Item metadata\"}},\"getAllNFTs()\":{\"details\":\"It will look for into MarketItem struct\"},\"getCurrentToken()\":{\"details\":\"It will be a uint256\"},\"getLatestIdToListedItem()\":{\"details\":\"It will returns a struct\"},\"getListPrice()\":{\"details\":\"It will returns a uint256 (price)\"},\"getListedItemForId(uint256)\":{\"details\":\"It will look for into the struct MarketItem\"},\"removeMarketItem(uint256)\":{\"params\":{\"tokenId\":\"is the tokenId of the listed item.\"}},\"sale(uint256)\":{\"details\":\"Execute the sale with just the tokenId\",\"params\":{\"tokenId\":\"set the ID of the item to sale\"}},\"updatePrice(uint256)\":{\"params\":{\"_listPrice\":\"Is the price that the user wants to change their item\"}}},\"version\":1},\"userdoc\":{\"events\":{\"ItemListedSuccess(uint256,address,address,uint256,bool)\":{\"notice\":\"Emitted when a market item has been created succesfully\"}},\"kind\":\"user\",\"methods\":{\"createMarketItem(string,uint256)\":{\"notice\":\"This function is to create a item into the ecommerce\"},\"getAllNFTs()\":{\"notice\":\"This function will return all the NFT\"},\"getCurrentToken()\":{\"notice\":\"This function will return the current token\"},\"getLatestIdToListedItem()\":{\"notice\":\"This function will return the latest item listed in the ecommerce\"},\"getListPrice()\":{\"notice\":\"This function will return the price of the item listed\"},\"getListedItemForId(uint256)\":{\"notice\":\"This function will return the items corresponding for the ID\"},\"removeMarketItem(uint256)\":{\"notice\":\"This function is to remove a listed item with tokenId\"},\"sale(uint256)\":{\"notice\":\"This function is to execute the sale\"},\"updatePrice(uint256)\":{\"notice\":\"@dev\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IBCYMarket.sol\":\"IBCYMarket\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IBCYMarket.sol\":{\"keccak256\":\"0xac6f0e5ff18dbf170f0fa930e4e4a120909f2c62aa99179028ab31a03a9b5799\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6ec6d8656b14eceeca94c71d6ad445a8b559cd6c28ffbb65725cd201ac8b008d\",\"dweb:/ipfs/QmUXEnDFfcPkj5DvqxhZaLrd41j1TGhBEU1oaqchsnNtAx\"]},\"project:/contracts/types/DataTypes.sol\":{\"keccak256\":\"0x6987cf015f7bacf70de60811f1b44401e67391aa22cec6af9ac8e58df423bf83\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://255a5c73811ae76a883b29354d0c1a818d45d246d85367c6c57256b87922f782\",\"dweb:/ipfs/QmbVcJ5FsuHjZ1wyVJmpt46zUtJex3HgpUu7oL8T94KUpK\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\nimport \"../types/DataTypes.sol\";\r\n\r\ninterface IBCYMarket {\r\n    \r\n    /// @notice Emitted when a market item has been created succesfully\r\n    /// @dev When a item is created, should show the item into the market\r\n    event ItemListedSuccess (\r\n        uint256 indexed tokenId,\r\n        address owner,\r\n        address seller,\r\n        uint256 price,\r\n        bool currentlyListed\r\n    );\r\n\r\n    /// @notice\r\n    /// @dev\r\n    /// @param _listPrice Is the price that the user wants to change their item\r\n    function updatePrice(uint256 _listPrice) external payable;\r\n\r\n    /// @notice This function is to create a item into the ecommerce\r\n    /// @dev Using 3 functions, the first to from OZ and the last one written below\r\n    /// @param tokenURI is the URL that saves the Item metadata\r\n    /// @param price is the price that the user will create their item\r\n    function createMarketItem(string memory tokenURI, uint256 price) external payable returns(uint256);\r\n\r\n    /// @notice This function is to remove a listed item with tokenId\r\n    /// @dev \r\n    /// @param tokenId is the tokenId of the listed item.\r\n    function removeMarketItem(uint256 tokenId) external;\r\n\r\n    /// @notice This function is to execute the sale\r\n    /// @dev Execute the sale with just the tokenId\r\n    /// @param tokenId set the ID of the item to sale\r\n    function sale(uint256 tokenId) external payable;\r\n    \r\n    /// @notice This function will return the price of the item listed\r\n    /// @dev It will returns a uint256 (price)\r\n    function getListPrice() external returns (uint256);\r\n\r\n    /// @notice This function will return the latest item listed in the ecommerce\r\n    /// @dev It will returns a struct\r\n    function getLatestIdToListedItem() external returns (DataTypes.MarketItem memory);\r\n\r\n    /// @notice This function will return the items corresponding for the ID\r\n    /// @dev It will look for into the struct MarketItem\r\n    function getListedItemForId(uint256 tokenId) external returns (DataTypes.MarketItem memory);\r\n\r\n    /// @notice This function will return the current token\r\n    /// @dev It will be a uint256\r\n    function getCurrentToken() external returns (uint256);\r\n\r\n    /// @notice This function will return all the NFT\r\n    /// @dev It will look for into MarketItem struct\r\n    function getAllNFTs() external returns (DataTypes.MarketItem[] memory);\r\n}",
+  "sourcePath": "D:\\BlockConvey\\Carbon to Stone - SmartContract\\contracts\\interfaces\\IBCYMarket.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IBCYMarket.sol",
+    "exportedSymbols": {
+      "DataTypes": [
+        3991
+      ],
+      "IBCYMarket": [
+        3933
+      ]
+    },
+    "id": 3934,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3854,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:21"
+      },
+      {
+        "absolutePath": "project:/contracts/types/DataTypes.sol",
+        "file": "../types/DataTypes.sol",
+        "id": 3855,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 3934,
+        "sourceUnit": 3992,
+        "src": "60:32:21",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IBCYMarket",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 3933,
+        "linearizedBaseContracts": [
+          3933
+        ],
+        "name": "IBCYMarket",
+        "nameLocation": "106:10:21",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 3856,
+              "nodeType": "StructuredDocumentation",
+              "src": "130:142:21",
+              "text": "@notice Emitted when a market item has been created succesfully\n @dev When a item is created, should show the item into the market"
+            },
+            "eventSelector": "4f6fd952feb64205f79cb104160879d8b4e3bf57214b00c5a76e8118d9a1bdc1",
+            "id": 3868,
+            "name": "ItemListedSuccess",
+            "nameLocation": "284:17:21",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3867,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3858,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "329:7:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3868,
+                  "src": "313:23:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3857,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "313:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3860,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "nameLocation": "355:5:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3868,
+                  "src": "347:13:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3859,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "347:7:21",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3862,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "seller",
+                  "nameLocation": "379:6:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3868,
+                  "src": "371:14:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3861,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "371:7:21",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3864,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "price",
+                  "nameLocation": "404:5:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3868,
+                  "src": "396:13:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3863,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "396:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3866,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "currentlyListed",
+                  "nameLocation": "425:15:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3868,
+                  "src": "420:20:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3865,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "420:4:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "302:145:21"
+            },
+            "src": "278:170:21"
+          },
+          {
+            "documentation": {
+              "id": 3869,
+              "nodeType": "StructuredDocumentation",
+              "src": "456:106:21",
+              "text": "@notice\n @dev\n @param _listPrice Is the price that the user wants to change their item"
+            },
+            "functionSelector": "8d6cc56d",
+            "id": 3874,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updatePrice",
+            "nameLocation": "577:11:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3872,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3871,
+                  "mutability": "mutable",
+                  "name": "_listPrice",
+                  "nameLocation": "597:10:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3874,
+                  "src": "589:18:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3870,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "589:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "588:20:21"
+            },
+            "returnParameters": {
+              "id": 3873,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "625:0:21"
+            },
+            "scope": 3933,
+            "src": "568:58:21",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 3875,
+              "nodeType": "StructuredDocumentation",
+              "src": "634:286:21",
+              "text": "@notice This function is to create a item into the ecommerce\n @dev Using 3 functions, the first to from OZ and the last one written below\n @param tokenURI is the URL that saves the Item metadata\n @param price is the price that the user will create their item"
+            },
+            "functionSelector": "e85bea5d",
+            "id": 3884,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createMarketItem",
+            "nameLocation": "935:16:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3880,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3877,
+                  "mutability": "mutable",
+                  "name": "tokenURI",
+                  "nameLocation": "966:8:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3884,
+                  "src": "952:22:21",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 3876,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "952:6:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3879,
+                  "mutability": "mutable",
+                  "name": "price",
+                  "nameLocation": "984:5:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3884,
+                  "src": "976:13:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3878,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "976:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "951:39:21"
+            },
+            "returnParameters": {
+              "id": 3883,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3882,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3884,
+                  "src": "1016:7:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3881,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1016:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1015:9:21"
+            },
+            "scope": 3933,
+            "src": "926:99:21",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 3885,
+              "nodeType": "StructuredDocumentation",
+              "src": "1033:139:21",
+              "text": "@notice This function is to remove a listed item with tokenId\n @dev \n @param tokenId is the tokenId of the listed item."
+            },
+            "functionSelector": "7fb770cb",
+            "id": 3890,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeMarketItem",
+            "nameLocation": "1187:16:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3888,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3887,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "1212:7:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3890,
+                  "src": "1204:15:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3886,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1204:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1203:17:21"
+            },
+            "returnParameters": {
+              "id": 3889,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1229:0:21"
+            },
+            "scope": 3933,
+            "src": "1178:52:21",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 3891,
+              "nodeType": "StructuredDocumentation",
+              "src": "1238:156:21",
+              "text": "@notice This function is to execute the sale\n @dev Execute the sale with just the tokenId\n @param tokenId set the ID of the item to sale"
+            },
+            "functionSelector": "96032702",
+            "id": 3896,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sale",
+            "nameLocation": "1409:4:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3894,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3893,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "1422:7:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3896,
+                  "src": "1414:15:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3892,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1414:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1413:17:21"
+            },
+            "returnParameters": {
+              "id": 3895,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1447:0:21"
+            },
+            "scope": 3933,
+            "src": "1400:48:21",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 3897,
+              "nodeType": "StructuredDocumentation",
+              "src": "1460:114:21",
+              "text": "@notice This function will return the price of the item listed\n @dev It will returns a uint256 (price)"
+            },
+            "functionSelector": "68f1945f",
+            "id": 3902,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getListPrice",
+            "nameLocation": "1589:12:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3898,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1601:2:21"
+            },
+            "returnParameters": {
+              "id": 3901,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3900,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3902,
+                  "src": "1622:7:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3899,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1622:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1621:9:21"
+            },
+            "scope": 3933,
+            "src": "1580:51:21",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 3903,
+              "nodeType": "StructuredDocumentation",
+              "src": "1639:116:21",
+              "text": "@notice This function will return the latest item listed in the ecommerce\n @dev It will returns a struct"
+            },
+            "functionSelector": "1e12f364",
+            "id": 3909,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatestIdToListedItem",
+            "nameLocation": "1770:23:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3904,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1793:2:21"
+            },
+            "returnParameters": {
+              "id": 3908,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3907,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3909,
+                  "src": "1814:27:21",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_MarketItem_$3990_memory_ptr",
+                    "typeString": "struct DataTypes.MarketItem"
+                  },
+                  "typeName": {
+                    "id": 3906,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3905,
+                      "name": "DataTypes.MarketItem",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 3990,
+                      "src": "1814:20:21"
+                    },
+                    "referencedDeclaration": 3990,
+                    "src": "1814:20:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_MarketItem_$3990_storage_ptr",
+                      "typeString": "struct DataTypes.MarketItem"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1813:29:21"
+            },
+            "scope": 3933,
+            "src": "1761:82:21",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 3910,
+              "nodeType": "StructuredDocumentation",
+              "src": "1851:130:21",
+              "text": "@notice This function will return the items corresponding for the ID\n @dev It will look for into the struct MarketItem"
+            },
+            "functionSelector": "63d1d893",
+            "id": 3918,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getListedItemForId",
+            "nameLocation": "1996:18:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3913,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3912,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "2023:7:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3918,
+                  "src": "2015:15:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3911,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2015:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2014:17:21"
+            },
+            "returnParameters": {
+              "id": 3917,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3916,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3918,
+                  "src": "2050:27:21",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_MarketItem_$3990_memory_ptr",
+                    "typeString": "struct DataTypes.MarketItem"
+                  },
+                  "typeName": {
+                    "id": 3915,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3914,
+                      "name": "DataTypes.MarketItem",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 3990,
+                      "src": "2050:20:21"
+                    },
+                    "referencedDeclaration": 3990,
+                    "src": "2050:20:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_MarketItem_$3990_storage_ptr",
+                      "typeString": "struct DataTypes.MarketItem"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2049:29:21"
+            },
+            "scope": 3933,
+            "src": "1987:92:21",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 3919,
+              "nodeType": "StructuredDocumentation",
+              "src": "2087:90:21",
+              "text": "@notice This function will return the current token\n @dev It will be a uint256"
+            },
+            "functionSelector": "ef2d1746",
+            "id": 3924,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCurrentToken",
+            "nameLocation": "2192:15:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3920,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2207:2:21"
+            },
+            "returnParameters": {
+              "id": 3923,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3922,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3924,
+                  "src": "2228:7:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3921,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2228:7:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2227:9:21"
+            },
+            "scope": 3933,
+            "src": "2183:54:21",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 3925,
+              "nodeType": "StructuredDocumentation",
+              "src": "2245:103:21",
+              "text": "@notice This function will return all the NFT\n @dev It will look for into MarketItem struct"
+            },
+            "functionSelector": "e0391b09",
+            "id": 3932,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAllNFTs",
+            "nameLocation": "2363:10:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3926,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2373:2:21"
+            },
+            "returnParameters": {
+              "id": 3931,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3930,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3932,
+                  "src": "2394:29:21",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_MarketItem_$3990_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct DataTypes.MarketItem[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3928,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 3927,
+                        "name": "DataTypes.MarketItem",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 3990,
+                        "src": "2394:20:21"
+                      },
+                      "referencedDeclaration": 3990,
+                      "src": "2394:20:21",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_MarketItem_$3990_storage_ptr",
+                        "typeString": "struct DataTypes.MarketItem"
+                      }
+                    },
+                    "id": 3929,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2394:22:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_MarketItem_$3990_storage_$dyn_storage_ptr",
+                      "typeString": "struct DataTypes.MarketItem[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2393:31:21"
+            },
+            "scope": 3933,
+            "src": "2354:71:21",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3934,
+        "src": "96:2332:21",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:2395:21"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2023-07-03T06:50:28.171Z",
+  "devdoc": {
+    "events": {
+      "ItemListedSuccess(uint256,address,address,uint256,bool)": {
+        "details": "When a item is created, should show the item into the market"
+      }
+    },
+    "kind": "dev",
+    "methods": {
+      "createMarketItem(string,uint256)": {
+        "details": "Using 3 functions, the first to from OZ and the last one written below",
+        "params": {
+          "price": "is the price that the user will create their item",
+          "tokenURI": "is the URL that saves the Item metadata"
+        }
+      },
+      "getAllNFTs()": {
+        "details": "It will look for into MarketItem struct"
+      },
+      "getCurrentToken()": {
+        "details": "It will be a uint256"
+      },
+      "getLatestIdToListedItem()": {
+        "details": "It will returns a struct"
+      },
+      "getListPrice()": {
+        "details": "It will returns a uint256 (price)"
+      },
+      "getListedItemForId(uint256)": {
+        "details": "It will look for into the struct MarketItem"
+      },
+      "removeMarketItem(uint256)": {
+        "params": {
+          "tokenId": "is the tokenId of the listed item."
+        }
+      },
+      "sale(uint256)": {
+        "details": "Execute the sale with just the tokenId",
+        "params": {
+          "tokenId": "set the ID of the item to sale"
+        }
+      },
+      "updatePrice(uint256)": {
+        "params": {
+          "_listPrice": "Is the price that the user wants to change their item"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "ItemListedSuccess(uint256,address,address,uint256,bool)": {
+        "notice": "Emitted when a market item has been created succesfully"
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "createMarketItem(string,uint256)": {
+        "notice": "This function is to create a item into the ecommerce"
+      },
+      "getAllNFTs()": {
+        "notice": "This function will return all the NFT"
+      },
+      "getCurrentToken()": {
+        "notice": "This function will return the current token"
+      },
+      "getLatestIdToListedItem()": {
+        "notice": "This function will return the latest item listed in the ecommerce"
+      },
+      "getListPrice()": {
+        "notice": "This function will return the price of the item listed"
+      },
+      "getListedItemForId(uint256)": {
+        "notice": "This function will return the items corresponding for the ID"
+      },
+      "removeMarketItem(uint256)": {
+        "notice": "This function is to remove a listed item with tokenId"
+      },
+      "sale(uint256)": {
+        "notice": "This function is to execute the sale"
+      },
+      "updatePrice(uint256)": {
+        "notice": "@dev"
+      }
+    },
+    "version": 1
+  }
+}

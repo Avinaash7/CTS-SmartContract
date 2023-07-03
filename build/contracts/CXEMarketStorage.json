@@ -1,0 +1,604 @@
+{
+  "contractName": "CXEMarketStorage",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "rate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"rate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"stateVariables\":{\"idToListedToken\":{\"details\":\"This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId\"},\"listPrice\":{\"details\":\"The gee charged by the ecommerce to be allowed to list an NFT\"},\"owner\":{\"details\":\"Owner is the contract address that created the smart contract\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/storage/BCYMarketStorage.sol\":\"CXEMarketStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/storage/BCYMarketStorage.sol\":{\"keccak256\":\"0xcb5e7ca651e6c712d4f3c29daaf20b262b4c19c88456cb052b46c606534179ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8dc520b97de04a62d86a84451193342a9527b1b9c78e932b4f950ad9de890d50\",\"dweb:/ipfs/QmSMG7RyfGrTgcBYU8Cj7BCP1vhwXLnUsYRLRP1vQ2RiuJ\"]},\"project:/contracts/types/DataTypes.sol\":{\"keccak256\":\"0x6987cf015f7bacf70de60811f1b44401e67391aa22cec6af9ac8e58df423bf83\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://255a5c73811ae76a883b29354d0c1a818d45d246d85367c6c57256b87922f782\",\"dweb:/ipfs/QmbVcJ5FsuHjZ1wyVJmpt46zUtJex3HgpUu7oL8T94KUpK\"]}},\"version\":1}",
+  "bytecode": "0x608060405268056bc75e2d6310000060015566038d7ea4c6800060025534801561002857600080fd5b5060b3806100376000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80632c4e722e14602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60015481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea264697066735822122014e8fd5c132b7d521936740a19640969ce6fd41499ce09e05c79cc14e526c16464736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80632c4e722e14602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60015481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea264697066735822122014e8fd5c132b7d521936740a19640969ce6fd41499ce09e05c79cc14e526c16464736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [
+    {
+      "ast": {
+        "nodeType": "YulBlock",
+        "src": "0:439:34",
+        "statements": [
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "52:32:34",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "62:16:34",
+                  "value": {
+                    "name": "value",
+                    "nodeType": "YulIdentifier",
+                    "src": "73:5:34"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "cleaned",
+                      "nodeType": "YulIdentifier",
+                      "src": "62:7:34"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "cleanup_t_uint256",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "34:5:34",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "cleaned",
+                "nodeType": "YulTypedName",
+                "src": "44:7:34",
+                "type": ""
+              }
+            ],
+            "src": "7:77:34"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "155:53:34",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "pos",
+                        "nodeType": "YulIdentifier",
+                        "src": "172:3:34"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "value",
+                            "nodeType": "YulIdentifier",
+                            "src": "195:5:34"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "cleanup_t_uint256",
+                          "nodeType": "YulIdentifier",
+                          "src": "177:17:34"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "177:24:34"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nodeType": "YulIdentifier",
+                      "src": "165:6:34"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "165:37:34"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "165:37:34"
+                }
+              ]
+            },
+            "name": "abi_encode_t_uint256_to_t_uint256_fromStack",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nodeType": "YulTypedName",
+                "src": "143:5:34",
+                "type": ""
+              },
+              {
+                "name": "pos",
+                "nodeType": "YulTypedName",
+                "src": "150:3:34",
+                "type": ""
+              }
+            ],
+            "src": "90:118:34"
+          },
+          {
+            "body": {
+              "nodeType": "YulBlock",
+              "src": "312:124:34",
+              "statements": [
+                {
+                  "nodeType": "YulAssignment",
+                  "src": "322:26:34",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nodeType": "YulIdentifier",
+                        "src": "334:9:34"
+                      },
+                      {
+                        "kind": "number",
+                        "nodeType": "YulLiteral",
+                        "src": "345:2:34",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "add",
+                      "nodeType": "YulIdentifier",
+                      "src": "330:3:34"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "330:18:34"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "tail",
+                      "nodeType": "YulIdentifier",
+                      "src": "322:4:34"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "value0",
+                        "nodeType": "YulIdentifier",
+                        "src": "402:6:34"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "headStart",
+                            "nodeType": "YulIdentifier",
+                            "src": "415:9:34"
+                          },
+                          {
+                            "kind": "number",
+                            "nodeType": "YulLiteral",
+                            "src": "426:1:34",
+                            "type": "",
+                            "value": "0"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "add",
+                          "nodeType": "YulIdentifier",
+                          "src": "411:3:34"
+                        },
+                        "nodeType": "YulFunctionCall",
+                        "src": "411:17:34"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "abi_encode_t_uint256_to_t_uint256_fromStack",
+                      "nodeType": "YulIdentifier",
+                      "src": "358:43:34"
+                    },
+                    "nodeType": "YulFunctionCall",
+                    "src": "358:71:34"
+                  },
+                  "nodeType": "YulExpressionStatement",
+                  "src": "358:71:34"
+                }
+              ]
+            },
+            "name": "abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nodeType": "YulTypedName",
+                "src": "284:9:34",
+                "type": ""
+              },
+              {
+                "name": "value0",
+                "nodeType": "YulTypedName",
+                "src": "296:6:34",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "tail",
+                "nodeType": "YulTypedName",
+                "src": "307:4:34",
+                "type": ""
+              }
+            ],
+            "src": "214:222:34"
+          }
+        ]
+      },
+      "contents": "{\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n}\n",
+      "id": 34,
+      "language": "Yul",
+      "name": "#utility.yul"
+    }
+  ],
+  "sourceMap": "98:495:22:-:0;;;273:14;251:36;;390:11;370:31;;98:495;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "98:495:22:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;251:36;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;7:77:34:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\nimport \"../types/DataTypes.sol\";\r\n\r\n\r\ncontract CXEMarketStorage {\r\n\r\n    /// @dev Owner is the contract address that created the smart contract\r\n    address payable owner;\r\n    /// @dev\r\n    uint256 public rate = 100 * 10 ** 18;\r\n    /// @dev The gee charged by the ecommerce to be allowed to list an NFT\r\n    uint256 listPrice = 0.001 ether;\r\n    /// @dev This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId\r\n    mapping(uint256 => DataTypes.MarketItem) internal idToListedToken;\r\n    \r\n}",
+  "sourcePath": "D:\\BlockConvey\\Carbon to Stone - SmartContract\\contracts\\storage\\BCYMarketStorage.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/storage/BCYMarketStorage.sol",
+    "exportedSymbols": {
+      "CXEMarketStorage": [
+        3958
+      ],
+      "DataTypes": [
+        3991
+      ]
+    },
+    "id": 3959,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3935,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:22"
+      },
+      {
+        "absolutePath": "project:/contracts/types/DataTypes.sol",
+        "file": "../types/DataTypes.sol",
+        "id": 3936,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 3959,
+        "sourceUnit": 3992,
+        "src": "60:32:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "CXEMarketStorage",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3958,
+        "linearizedBaseContracts": [
+          3958
+        ],
+        "name": "CXEMarketStorage",
+        "nameLocation": "107:16:22",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "documentation": {
+              "id": 3937,
+              "nodeType": "StructuredDocumentation",
+              "src": "133:70:22",
+              "text": "@dev Owner is the contract address that created the smart contract"
+            },
+            "id": 3939,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "225:5:22",
+            "nodeType": "VariableDeclaration",
+            "scope": 3958,
+            "src": "209:21:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 3938,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "209:15:22",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 3940,
+              "nodeType": "StructuredDocumentation",
+              "src": "237:8:22",
+              "text": "@dev"
+            },
+            "functionSelector": "2c4e722e",
+            "id": 3947,
+            "mutability": "mutable",
+            "name": "rate",
+            "nameLocation": "266:4:22",
+            "nodeType": "VariableDeclaration",
+            "scope": 3958,
+            "src": "251:36:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3941,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "251:7:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "commonType": {
+                "typeIdentifier": "t_rational_100000000000000000000_by_1",
+                "typeString": "int_const 100000000000000000000"
+              },
+              "id": 3946,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "lValueRequested": false,
+              "leftExpression": {
+                "hexValue": "313030",
+                "id": 3942,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "273:3:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_100_by_1",
+                  "typeString": "int_const 100"
+                },
+                "value": "100"
+              },
+              "nodeType": "BinaryOperation",
+              "operator": "*",
+              "rightExpression": {
+                "commonType": {
+                  "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                  "typeString": "int_const 1000000000000000000"
+                },
+                "id": 3945,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "leftExpression": {
+                  "hexValue": "3130",
+                  "id": 3943,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "279:2:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_10_by_1",
+                    "typeString": "int_const 10"
+                  },
+                  "value": "10"
+                },
+                "nodeType": "BinaryOperation",
+                "operator": "**",
+                "rightExpression": {
+                  "hexValue": "3138",
+                  "id": 3944,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "285:2:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_18_by_1",
+                    "typeString": "int_const 18"
+                  },
+                  "value": "18"
+                },
+                "src": "279:8:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                  "typeString": "int_const 1000000000000000000"
+                }
+              },
+              "src": "273:14:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_100000000000000000000_by_1",
+                "typeString": "int_const 100000000000000000000"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 3948,
+              "nodeType": "StructuredDocumentation",
+              "src": "294:70:22",
+              "text": "@dev The gee charged by the ecommerce to be allowed to list an NFT"
+            },
+            "id": 3951,
+            "mutability": "mutable",
+            "name": "listPrice",
+            "nameLocation": "378:9:22",
+            "nodeType": "VariableDeclaration",
+            "scope": 3958,
+            "src": "370:31:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3949,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "370:7:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "302e303031",
+              "id": 3950,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "390:11:22",
+              "subdenomination": "ether",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1000000000000000_by_1",
+                "typeString": "int_const 1000000000000000"
+              },
+              "value": "0.001"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 3952,
+              "nodeType": "StructuredDocumentation",
+              "src": "408:104:22",
+              "text": "@dev This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId"
+            },
+            "id": 3957,
+            "mutability": "mutable",
+            "name": "idToListedToken",
+            "nameLocation": "568:15:22",
+            "nodeType": "VariableDeclaration",
+            "scope": 3958,
+            "src": "518:65:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$3990_storage_$",
+              "typeString": "mapping(uint256 => struct DataTypes.MarketItem)"
+            },
+            "typeName": {
+              "id": 3956,
+              "keyType": {
+                "id": 3953,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "526:7:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "518:40:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$3990_storage_$",
+                "typeString": "mapping(uint256 => struct DataTypes.MarketItem)"
+              },
+              "valueType": {
+                "id": 3955,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 3954,
+                  "name": "DataTypes.MarketItem",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3990,
+                  "src": "537:20:22"
+                },
+                "referencedDeclaration": 3990,
+                "src": "537:20:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_MarketItem_$3990_storage_ptr",
+                  "typeString": "struct DataTypes.MarketItem"
+                }
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3959,
+        "src": "98:495:22",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:560:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2023-07-03T06:50:28.193Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "stateVariables": {
+      "idToListedToken": {
+        "details": "This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId"
+      },
+      "listPrice": {
+        "details": "The gee charged by the ecommerce to be allowed to list an NFT"
+      },
+      "owner": {
+        "details": "Owner is the contract address that created the smart contract"
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "contractName": "DataTypes",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/types/DataTypes.sol\":\"DataTypes\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/types/DataTypes.sol\":{\"keccak256\":\"0x6987cf015f7bacf70de60811f1b44401e67391aa22cec6af9ac8e58df423bf83\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://255a5c73811ae76a883b29354d0c1a818d45d246d85367c6c57256b87922f782\",\"dweb:/ipfs/QmbVcJ5FsuHjZ1wyVJmpt46zUtJex3HgpUu7oL8T94KUpK\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220b96e4f097c12b6981d62530a574f8cab23067745aa0eea311ef6f2226b1bb3a264736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220b96e4f097c12b6981d62530a574f8cab23067745aa0eea311ef6f2226b1bb3a264736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "60:269:24:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "60:269:24:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\ncontract DataTypes {\r\n    \r\n    /// @notice The structure to store info about a listed Item\r\n    struct MarketItem {\r\n        uint tokenId;\r\n        address payable owner;\r\n        address payable seller;\r\n        uint256 price;\r\n        bool currentlyListed;\r\n    }\r\n}",
+  "sourcePath": "D:\\BlockConvey\\Carbon to Stone - SmartContract\\contracts\\types\\DataTypes.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/types/DataTypes.sol",
+    "exportedSymbols": {
+      "DataTypes": [
+        3991
+      ]
+    },
+    "id": 3992,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3979,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:24"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "DataTypes",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3991,
+        "linearizedBaseContracts": [
+          3991
+        ],
+        "name": "DataTypes",
+        "nameLocation": "69:9:24",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "DataTypes.MarketItem",
+            "id": 3990,
+            "members": [
+              {
+                "constant": false,
+                "id": 3981,
+                "mutability": "mutable",
+                "name": "tokenId",
+                "nameLocation": "191:7:24",
+                "nodeType": "VariableDeclaration",
+                "scope": 3990,
+                "src": "186:12:24",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3980,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "186:4:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3983,
+                "mutability": "mutable",
+                "name": "owner",
+                "nameLocation": "225:5:24",
+                "nodeType": "VariableDeclaration",
+                "scope": 3990,
+                "src": "209:21:24",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 3982,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "209:15:24",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3985,
+                "mutability": "mutable",
+                "name": "seller",
+                "nameLocation": "257:6:24",
+                "nodeType": "VariableDeclaration",
+                "scope": 3990,
+                "src": "241:22:24",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 3984,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "241:15:24",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3987,
+                "mutability": "mutable",
+                "name": "price",
+                "nameLocation": "282:5:24",
+                "nodeType": "VariableDeclaration",
+                "scope": 3990,
+                "src": "274:13:24",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3986,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "274:7:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3989,
+                "mutability": "mutable",
+                "name": "currentlyListed",
+                "nameLocation": "303:15:24",
+                "nodeType": "VariableDeclaration",
+                "scope": 3990,
+                "src": "298:20:24",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 3988,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "298:4:24",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "MarketItem",
+            "nameLocation": "164:10:24",
+            "nodeType": "StructDefinition",
+            "scope": 3991,
+            "src": "157:169:24",
+            "visibility": "public"
+          }
+        ],
+        "scope": 3992,
+        "src": "60:269:24",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:296:24"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2023-07-03T06:50:28.200Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
