@@ -19,10 +19,14 @@
  */
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
+
 
 const fs = require('fs');
 //const mnemonic = fs.readFileSync(".secret").toString().trim();
-const mnemonic = "olympic mind palm grief arrive remember wasp dry talk cricket advance monster"
+const mnemonic = process.env.MNEMONIC;
+
 
 module.exports = {
   /**
