@@ -3,7 +3,7 @@
   "abi": [
     {
       "inputs": [],
-      "name": "rate",
+      "name": "listingfee",
       "outputs": [
         {
           "internalType": "uint256",
@@ -15,9 +15,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"rate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"stateVariables\":{\"idToListedToken\":{\"details\":\"This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId\"},\"listPrice\":{\"details\":\"The gee charged by the ecommerce to be allowed to list an NFT\"},\"owner\":{\"details\":\"Owner is the contract address that created the smart contract\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/storage/BCYMarketStorage.sol\":\"BCYMarketStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/storage/BCYMarketStorage.sol\":{\"keccak256\":\"0x8aef007ad16db6bbfeda8804d9939953e90d4a315b9400305f262f1325902bab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e10149a638784eee2216f67fc4e7c852cc67b369cd317cf6c065c64bee46408c\",\"dweb:/ipfs/QmeUM5FN7UNReeqbMVKrhYkudmeE5x1UBkuWH1q8PxAy8W\"]},\"project:/contracts/types/DataTypes.sol\":{\"keccak256\":\"0x6987cf015f7bacf70de60811f1b44401e67391aa22cec6af9ac8e58df423bf83\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://255a5c73811ae76a883b29354d0c1a818d45d246d85367c6c57256b87922f782\",\"dweb:/ipfs/QmbVcJ5FsuHjZ1wyVJmpt46zUtJex3HgpUu7oL8T94KUpK\"]}},\"version\":1}",
-  "bytecode": "0x608060405268056bc75e2d6310000060015566038d7ea4c6800060025534801561002857600080fd5b5060b3806100376000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80632c4e722e14602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60015481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea264697066735822122015d00d3a96a4e43f96a12b9a250438497dc88f53dce8d6b6bff200343deaacc664736f6c634300080e0033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80632c4e722e14602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60015481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea264697066735822122015d00d3a96a4e43f96a12b9a250438497dc88f53dce8d6b6bff200343deaacc664736f6c634300080e0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"listingfee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"stateVariables\":{\"idToListedToken\":{\"details\":\"This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId\"},\"listPrice\":{\"details\":\"The fee charged by the marketplace to be allowed to list an NFT\"},\"owner\":{\"details\":\"Owner is the contract address that created the smart contract\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/storage/BCYMarketStorage.sol\":\"BCYMarketStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/storage/BCYMarketStorage.sol\":{\"keccak256\":\"0x46608171c4fad82f317be3e0d49446f7f388ad5867d319d609e26fc1faf7a8f2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://849929e5650e06af4566d6052131b43c35d2401be8828b41546eeac5eed7f2fa\",\"dweb:/ipfs/QmRzQn7ZcM7G96yQdLSFC2waupMTbJ5Tz1a2MgCwvFbDjJ\"]},\"project:/contracts/types/DataTypes.sol\":{\"keccak256\":\"0x6987cf015f7bacf70de60811f1b44401e67391aa22cec6af9ac8e58df423bf83\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://255a5c73811ae76a883b29354d0c1a818d45d246d85367c6c57256b87922f782\",\"dweb:/ipfs/QmbVcJ5FsuHjZ1wyVJmpt46zUtJex3HgpUu7oL8T94KUpK\"]}},\"version\":1}",
+  "bytecode": "0x608060405266038d7ea4c6800060015566038d7ea4c6800060025534801561002657600080fd5b5060b3806100356000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806339c6a80814602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60015481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea2646970667358221220fc5e7b86d822d04927a458096901d1042f94012ba33c61a45776abc418413b0664736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806339c6a80814602d575b600080fd5b60336047565b604051603e91906064565b60405180910390f35b60015481565b6000819050919050565b605e81604d565b82525050565b6000602082019050607760008301846057565b9291505056fea2646970667358221220fc5e7b86d822d04927a458096901d1042f94012ba33c61a45776abc418413b0664736f6c634300080e0033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -248,21 +248,21 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "98:495:24:-:0;;;273:14;251:36;;390:11;370:31;;98:495;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "98:495:24:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;251:36;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;7:77:36:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\nimport \"../types/DataTypes.sol\";\r\n\r\n\r\ncontract BCYMarketStorage {\r\n\r\n    /// @dev Owner is the contract address that created the smart contract\r\n    address payable owner;\r\n    /// @dev\r\n    uint256 public rate = 100 * 10 ** 18;\r\n    /// @dev The gee charged by the ecommerce to be allowed to list an NFT\r\n    uint256 listPrice = 0.001 ether;\r\n    /// @dev This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId\r\n    mapping(uint256 => DataTypes.MarketItem) internal idToListedToken;\r\n    \r\n}",
+  "sourceMap": "98:500:24:-:0;;;279:11;251:39;;395:11;375:31;;98:500;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "98:500:24:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;251:39;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;7:77:36:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\nimport \"../types/DataTypes.sol\";\r\n\r\n\r\ncontract BCYMarketStorage {\r\n\r\n    /// @dev Owner is the contract address that created the smart contract\r\n    address payable owner;\r\n    /// @dev\r\n    uint256 public listingfee = 0.001 ether;\r\n    /// @dev The fee charged by the marketplace to be allowed to list an NFT\r\n    uint256 listPrice = 0.001 ether;\r\n    /// @dev This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId\r\n    mapping(uint256 => DataTypes.MarketItem) internal idToListedToken;\r\n    \r\n}",
   "sourcePath": "D:\\BlockConvey\\Carbon to Stone - SmartContract\\contracts\\storage\\BCYMarketStorage.sol",
   "ast": {
     "absolutePath": "project:/contracts/storage/BCYMarketStorage.sol",
     "exportedSymbols": {
       "BCYMarketStorage": [
-        4180
+        4176
       ],
       "DataTypes": [
-        4213
+        4209
       ]
     },
-    "id": 4181,
+    "id": 4177,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -283,8 +283,8 @@
         "id": 4158,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4181,
-        "sourceUnit": 4214,
+        "scope": 4177,
+        "sourceUnit": 4210,
         "src": "60:32:24",
         "symbolAliases": [],
         "unitAlias": ""
@@ -296,9 +296,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4180,
+        "id": 4176,
         "linearizedBaseContracts": [
-          4180
+          4176
         ],
         "name": "BCYMarketStorage",
         "nameLocation": "107:16:24",
@@ -317,7 +317,7 @@
             "name": "owner",
             "nameLocation": "225:5:24",
             "nodeType": "VariableDeclaration",
-            "scope": 4180,
+            "scope": 4176,
             "src": "209:21:24",
             "stateVariable": true,
             "storageLocation": "default",
@@ -346,14 +346,14 @@
               "src": "237:8:24",
               "text": "@dev"
             },
-            "functionSelector": "2c4e722e",
-            "id": 4169,
+            "functionSelector": "39c6a808",
+            "id": 4165,
             "mutability": "mutable",
-            "name": "rate",
-            "nameLocation": "266:4:24",
+            "name": "listingfee",
+            "nameLocation": "266:10:24",
             "nodeType": "VariableDeclaration",
-            "scope": 4180,
-            "src": "251:36:24",
+            "scope": 4176,
+            "src": "251:39:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -371,106 +371,39 @@
               }
             },
             "value": {
-              "commonType": {
-                "typeIdentifier": "t_rational_100000000000000000000_by_1",
-                "typeString": "int_const 100000000000000000000"
-              },
-              "id": 4168,
+              "hexValue": "302e303031",
+              "id": 4164,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
+              "kind": "number",
               "lValueRequested": false,
-              "leftExpression": {
-                "hexValue": "313030",
-                "id": 4164,
-                "isConstant": false,
-                "isLValue": false,
-                "isPure": true,
-                "kind": "number",
-                "lValueRequested": false,
-                "nodeType": "Literal",
-                "src": "273:3:24",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_rational_100_by_1",
-                  "typeString": "int_const 100"
-                },
-                "value": "100"
-              },
-              "nodeType": "BinaryOperation",
-              "operator": "*",
-              "rightExpression": {
-                "commonType": {
-                  "typeIdentifier": "t_rational_1000000000000000000_by_1",
-                  "typeString": "int_const 1000000000000000000"
-                },
-                "id": 4167,
-                "isConstant": false,
-                "isLValue": false,
-                "isPure": true,
-                "lValueRequested": false,
-                "leftExpression": {
-                  "hexValue": "3130",
-                  "id": 4165,
-                  "isConstant": false,
-                  "isLValue": false,
-                  "isPure": true,
-                  "kind": "number",
-                  "lValueRequested": false,
-                  "nodeType": "Literal",
-                  "src": "279:2:24",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_rational_10_by_1",
-                    "typeString": "int_const 10"
-                  },
-                  "value": "10"
-                },
-                "nodeType": "BinaryOperation",
-                "operator": "**",
-                "rightExpression": {
-                  "hexValue": "3138",
-                  "id": 4166,
-                  "isConstant": false,
-                  "isLValue": false,
-                  "isPure": true,
-                  "kind": "number",
-                  "lValueRequested": false,
-                  "nodeType": "Literal",
-                  "src": "285:2:24",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_rational_18_by_1",
-                    "typeString": "int_const 18"
-                  },
-                  "value": "18"
-                },
-                "src": "279:8:24",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_rational_1000000000000000000_by_1",
-                  "typeString": "int_const 1000000000000000000"
-                }
-              },
-              "src": "273:14:24",
+              "nodeType": "Literal",
+              "src": "279:11:24",
+              "subdenomination": "ether",
               "typeDescriptions": {
-                "typeIdentifier": "t_rational_100000000000000000000_by_1",
-                "typeString": "int_const 100000000000000000000"
-              }
+                "typeIdentifier": "t_rational_1000000000000000_by_1",
+                "typeString": "int_const 1000000000000000"
+              },
+              "value": "0.001"
             },
             "visibility": "public"
           },
           {
             "constant": false,
             "documentation": {
-              "id": 4170,
+              "id": 4166,
               "nodeType": "StructuredDocumentation",
-              "src": "294:70:24",
-              "text": "@dev The gee charged by the ecommerce to be allowed to list an NFT"
+              "src": "297:72:24",
+              "text": "@dev The fee charged by the marketplace to be allowed to list an NFT"
             },
-            "id": 4173,
+            "id": 4169,
             "mutability": "mutable",
             "name": "listPrice",
-            "nameLocation": "378:9:24",
+            "nameLocation": "383:9:24",
             "nodeType": "VariableDeclaration",
-            "scope": 4180,
-            "src": "370:31:24",
+            "scope": 4176,
+            "src": "375:31:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -478,10 +411,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 4171,
+              "id": 4167,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "370:7:24",
+              "src": "375:7:24",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -489,14 +422,14 @@
             },
             "value": {
               "hexValue": "302e303031",
-              "id": 4172,
+              "id": 4168,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "390:11:24",
+              "src": "395:11:24",
               "subdenomination": "ether",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_1000000000000000_by_1",
@@ -509,56 +442,56 @@
           {
             "constant": false,
             "documentation": {
-              "id": 4174,
+              "id": 4170,
               "nodeType": "StructuredDocumentation",
-              "src": "408:104:24",
+              "src": "413:104:24",
               "text": "@dev This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId"
             },
-            "id": 4179,
+            "id": 4175,
             "mutability": "mutable",
             "name": "idToListedToken",
-            "nameLocation": "568:15:24",
+            "nameLocation": "573:15:24",
             "nodeType": "VariableDeclaration",
-            "scope": 4180,
-            "src": "518:65:24",
+            "scope": 4176,
+            "src": "523:65:24",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$4212_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$4208_storage_$",
               "typeString": "mapping(uint256 => struct DataTypes.MarketItem)"
             },
             "typeName": {
-              "id": 4178,
+              "id": 4174,
               "keyType": {
-                "id": 4175,
+                "id": 4171,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
-                "src": "526:7:24",
+                "src": "531:7:24",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "518:40:24",
+              "src": "523:40:24",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$4212_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MarketItem_$4208_storage_$",
                 "typeString": "mapping(uint256 => struct DataTypes.MarketItem)"
               },
               "valueType": {
-                "id": 4177,
+                "id": 4173,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 4176,
+                  "id": 4172,
                   "name": "DataTypes.MarketItem",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 4212,
-                  "src": "537:20:24"
+                  "referencedDeclaration": 4208,
+                  "src": "542:20:24"
                 },
-                "referencedDeclaration": 4212,
-                "src": "537:20:24",
+                "referencedDeclaration": 4208,
+                "src": "542:20:24",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_MarketItem_$4212_storage_ptr",
+                  "typeIdentifier": "t_struct$_MarketItem_$4208_storage_ptr",
                   "typeString": "struct DataTypes.MarketItem"
                 }
               }
@@ -566,12 +499,12 @@
             "visibility": "internal"
           }
         ],
-        "scope": 4181,
-        "src": "98:495:24",
+        "scope": 4177,
+        "src": "98:500:24",
         "usedErrors": []
       }
     ],
-    "src": "33:560:24"
+    "src": "33:565:24"
   },
   "compiler": {
     "name": "solc",
@@ -579,7 +512,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2023-07-03T12:18:15.213Z",
+  "updatedAt": "2023-07-03T13:22:21.916Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
@@ -588,7 +521,7 @@
         "details": "This mapping mas tokenId to the NFT info and is helpful when retrieving details about a tokenId"
       },
       "listPrice": {
-        "details": "The gee charged by the ecommerce to be allowed to list an NFT"
+        "details": "The fee charged by the marketplace to be allowed to list an NFT"
       },
       "owner": {
         "details": "Owner is the contract address that created the smart contract"

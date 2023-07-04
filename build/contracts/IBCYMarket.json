@@ -268,7 +268,7 @@
     "absolutePath": "project:/contracts/interfaces/IBCYMarket.sol",
     "exportedSymbols": {
       "DataTypes": [
-        4213
+        4209
       ],
       "IBCYMarket": [
         4086
@@ -296,7 +296,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 4087,
-        "sourceUnit": 4214,
+        "sourceUnit": 4210,
         "src": "60:32:22",
         "symbolAliases": [],
         "unitAlias": ""
@@ -877,7 +877,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_MarketItem_$4212_memory_ptr",
+                    "typeIdentifier": "t_struct$_MarketItem_$4208_memory_ptr",
                     "typeString": "struct DataTypes.MarketItem"
                   },
                   "typeName": {
@@ -887,13 +887,13 @@
                       "id": 4058,
                       "name": "DataTypes.MarketItem",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4212,
+                      "referencedDeclaration": 4208,
                       "src": "1814:20:22"
                     },
-                    "referencedDeclaration": 4212,
+                    "referencedDeclaration": 4208,
                     "src": "1814:20:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_MarketItem_$4212_storage_ptr",
+                      "typeIdentifier": "t_struct$_MarketItem_$4208_storage_ptr",
                       "typeString": "struct DataTypes.MarketItem"
                     }
                   },
@@ -973,7 +973,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_MarketItem_$4212_memory_ptr",
+                    "typeIdentifier": "t_struct$_MarketItem_$4208_memory_ptr",
                     "typeString": "struct DataTypes.MarketItem"
                   },
                   "typeName": {
@@ -983,13 +983,13 @@
                       "id": 4067,
                       "name": "DataTypes.MarketItem",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4212,
+                      "referencedDeclaration": 4208,
                       "src": "2050:20:22"
                     },
-                    "referencedDeclaration": 4212,
+                    "referencedDeclaration": 4208,
                     "src": "2050:20:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_MarketItem_$4212_storage_ptr",
+                      "typeIdentifier": "t_struct$_MarketItem_$4208_storage_ptr",
                       "typeString": "struct DataTypes.MarketItem"
                     }
                   },
@@ -1102,7 +1102,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_MarketItem_$4212_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_MarketItem_$4208_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct DataTypes.MarketItem[]"
                   },
                   "typeName": {
@@ -1113,13 +1113,13 @@
                         "id": 4080,
                         "name": "DataTypes.MarketItem",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 4212,
+                        "referencedDeclaration": 4208,
                         "src": "2394:20:22"
                       },
-                      "referencedDeclaration": 4212,
+                      "referencedDeclaration": 4208,
                       "src": "2394:20:22",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_MarketItem_$4212_storage_ptr",
+                        "typeIdentifier": "t_struct$_MarketItem_$4208_storage_ptr",
                         "typeString": "struct DataTypes.MarketItem"
                       }
                     },
@@ -1127,7 +1127,7 @@
                     "nodeType": "ArrayTypeName",
                     "src": "2394:22:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_MarketItem_$4212_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_MarketItem_$4208_storage_$dyn_storage_ptr",
                       "typeString": "struct DataTypes.MarketItem[]"
                     }
                   },
@@ -1156,7 +1156,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2023-07-03T12:18:15.204Z",
+  "updatedAt": "2023-07-03T13:22:21.909Z",
   "devdoc": {
     "events": {
       "ItemListedSuccess(uint256,address,address,uint256,bool)": {

@@ -15,15 +15,15 @@
     "absolutePath": "project:/contracts/storage/NFTStorage.sol",
     "exportedSymbols": {
       "NFTStorage": [
-        4199
+        4195
       ]
     },
-    "id": 4200,
+    "id": 4196,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4182,
+        "id": 4178,
         "literals": [
           "solidity",
           "^",
@@ -40,9 +40,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4199,
+        "id": 4195,
         "linearizedBaseContracts": [
-          4199
+          4195
         ],
         "name": "NFTStorage",
         "nameLocation": "69:10:25",
@@ -50,12 +50,12 @@
         "nodes": [
           {
             "constant": false,
-            "id": 4186,
+            "id": 4182,
             "mutability": "mutable",
             "name": "_owners",
             "nameLocation": "126:7:25",
             "nodeType": "VariableDeclaration",
-            "scope": 4199,
+            "scope": 4195,
             "src": "89:44:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -64,9 +64,9 @@
               "typeString": "mapping(uint256 => address)"
             },
             "typeName": {
-              "id": 4185,
+              "id": 4181,
               "keyType": {
-                "id": 4183,
+                "id": 4179,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "97:7:25",
@@ -82,7 +82,7 @@
                 "typeString": "mapping(uint256 => address)"
               },
               "valueType": {
-                "id": 4184,
+                "id": 4180,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "108:7:25",
@@ -98,17 +98,17 @@
           {
             "constant": false,
             "documentation": {
-              "id": 4187,
+              "id": 4183,
               "nodeType": "StructuredDocumentation",
               "src": "146:49:25",
               "text": "@dev Mapping from owner to operator approvals"
             },
-            "id": 4193,
+            "id": 4189,
             "mutability": "mutable",
             "name": "_operatorApprovals",
             "nameLocation": "255:18:25",
             "nodeType": "VariableDeclaration",
-            "scope": 4199,
+            "scope": 4195,
             "src": "201:72:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -117,9 +117,9 @@
               "typeString": "mapping(address => mapping(address => bool))"
             },
             "typeName": {
-              "id": 4192,
+              "id": 4188,
               "keyType": {
-                "id": 4188,
+                "id": 4184,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "209:7:25",
@@ -135,9 +135,9 @@
                 "typeString": "mapping(address => mapping(address => bool))"
               },
               "valueType": {
-                "id": 4191,
+                "id": 4187,
                 "keyType": {
-                  "id": 4189,
+                  "id": 4185,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "228:7:25",
@@ -153,7 +153,7 @@
                   "typeString": "mapping(address => bool)"
                 },
                 "valueType": {
-                  "id": 4190,
+                  "id": 4186,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "239:4:25",
@@ -169,17 +169,17 @@
           {
             "constant": false,
             "documentation": {
-              "id": 4194,
+              "id": 4190,
               "nodeType": "StructuredDocumentation",
               "src": "282:50:25",
               "text": "@dev Mapping from token ID to approved address"
             },
-            "id": 4198,
+            "id": 4194,
             "mutability": "mutable",
             "name": "_tokenApprovals",
             "nameLocation": "375:15:25",
             "nodeType": "VariableDeclaration",
-            "scope": 4199,
+            "scope": 4195,
             "src": "338:52:25",
             "stateVariable": true,
             "storageLocation": "default",
@@ -188,9 +188,9 @@
               "typeString": "mapping(uint256 => address)"
             },
             "typeName": {
-              "id": 4197,
+              "id": 4193,
               "keyType": {
-                "id": 4195,
+                "id": 4191,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "346:7:25",
@@ -206,7 +206,7 @@
                 "typeString": "mapping(uint256 => address)"
               },
               "valueType": {
-                "id": 4196,
+                "id": 4192,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "357:7:25",
@@ -220,7 +220,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 4200,
+        "scope": 4196,
         "src": "60:334:25",
         "usedErrors": []
       }
@@ -233,7 +233,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2023-07-03T12:18:15.219Z",
+  "updatedAt": "2023-07-03T13:22:21.919Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

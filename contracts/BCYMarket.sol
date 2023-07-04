@@ -55,7 +55,7 @@ contract BCYMarket is BCYMarketStorage,IBCYMarket,
         uint256 price
     ) public payable returns (uint256) {
         /// @dev
-        bcyAddress.transferFrom(msg.sender, address(this), rate);
+        bcyAddress.transferFrom(msg.sender, address(this), listingfee);
         /// @dev Increment the tokenId counter
         _tokenIds.increment();
         uint256 newTokenId = _tokenIds.current();
@@ -64,7 +64,7 @@ contract BCYMarket is BCYMarketStorage,IBCYMarket,
         /// @dev Map the tokenId to the tokenURI (IPFS URL saving the metadata)
         _setTokenURI(newTokenId, tokenURI);
         /// @dev Helper function to update variables and emit an event
-        createListedItem(newTokenId, price);
+        _createListedItem(newTokenId, price);
 
         return newTokenId;
     }
@@ -75,7 +75,7 @@ contract BCYMarket is BCYMarketStorage,IBCYMarket,
      * @param tokenId is the Id of the item created
      * @param price is the price of the item created
      */
-    function createListedItem(uint256 tokenId, uint256 price) private {
+    function _createListedItem(uint256 tokenId, uint256 price) private {
         /// @dev Make sure the msg.sender sent enough funds to pay for create item
         require(msg.value == listPrice, "Checking to send the correct price");
         require(price > 0, "The price must be more than zero");

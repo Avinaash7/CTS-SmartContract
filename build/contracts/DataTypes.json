@@ -15,15 +15,15 @@
     "absolutePath": "project:/contracts/types/DataTypes.sol",
     "exportedSymbols": {
       "DataTypes": [
-        4213
+        4209
       ]
     },
-    "id": 4214,
+    "id": 4210,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4201,
+        "id": 4197,
         "literals": [
           "solidity",
           "^",
@@ -40,9 +40,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4213,
+        "id": 4209,
         "linearizedBaseContracts": [
-          4213
+          4209
         ],
         "name": "DataTypes",
         "nameLocation": "69:9:26",
@@ -50,16 +50,16 @@
         "nodes": [
           {
             "canonicalName": "DataTypes.MarketItem",
-            "id": 4212,
+            "id": 4208,
             "members": [
               {
                 "constant": false,
-                "id": 4203,
+                "id": 4199,
                 "mutability": "mutable",
                 "name": "tokenId",
                 "nameLocation": "191:7:26",
                 "nodeType": "VariableDeclaration",
-                "scope": 4212,
+                "scope": 4208,
                 "src": "186:12:26",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -68,7 +68,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4202,
+                  "id": 4198,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "186:4:26",
@@ -81,12 +81,12 @@
               },
               {
                 "constant": false,
-                "id": 4205,
+                "id": 4201,
                 "mutability": "mutable",
                 "name": "owner",
                 "nameLocation": "225:5:26",
                 "nodeType": "VariableDeclaration",
-                "scope": 4212,
+                "scope": 4208,
                 "src": "209:21:26",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -95,7 +95,7 @@
                   "typeString": "address payable"
                 },
                 "typeName": {
-                  "id": 4204,
+                  "id": 4200,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "209:15:26",
@@ -109,12 +109,12 @@
               },
               {
                 "constant": false,
-                "id": 4207,
+                "id": 4203,
                 "mutability": "mutable",
                 "name": "seller",
                 "nameLocation": "257:6:26",
                 "nodeType": "VariableDeclaration",
-                "scope": 4212,
+                "scope": 4208,
                 "src": "241:22:26",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -123,7 +123,7 @@
                   "typeString": "address payable"
                 },
                 "typeName": {
-                  "id": 4206,
+                  "id": 4202,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "241:15:26",
@@ -137,12 +137,12 @@
               },
               {
                 "constant": false,
-                "id": 4209,
+                "id": 4205,
                 "mutability": "mutable",
                 "name": "price",
                 "nameLocation": "282:5:26",
                 "nodeType": "VariableDeclaration",
-                "scope": 4212,
+                "scope": 4208,
                 "src": "274:13:26",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -151,7 +151,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4208,
+                  "id": 4204,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "274:7:26",
@@ -164,12 +164,12 @@
               },
               {
                 "constant": false,
-                "id": 4211,
+                "id": 4207,
                 "mutability": "mutable",
                 "name": "currentlyListed",
                 "nameLocation": "303:15:26",
                 "nodeType": "VariableDeclaration",
-                "scope": 4212,
+                "scope": 4208,
                 "src": "298:20:26",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -178,7 +178,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 4210,
+                  "id": 4206,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "298:4:26",
@@ -193,12 +193,12 @@
             "name": "MarketItem",
             "nameLocation": "164:10:26",
             "nodeType": "StructDefinition",
-            "scope": 4213,
+            "scope": 4209,
             "src": "157:169:26",
             "visibility": "public"
           }
         ],
-        "scope": 4214,
+        "scope": 4210,
         "src": "60:269:26",
         "usedErrors": []
       }
@@ -211,7 +211,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2023-07-03T12:18:15.224Z",
+  "updatedAt": "2023-07-03T13:22:21.923Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
